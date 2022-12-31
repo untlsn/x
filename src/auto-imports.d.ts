@@ -14,5 +14,5 @@ declare global {
   const test: typeof import('vitest')['test']
   const vi: typeof import('vitest')['vi']
   const vitest: typeof import('vitest')['vitest']
-  const x: typeof import('src')['x']
+  const x: typeof import('x/index')['x']
 }
