@@ -8,4 +8,6 @@
  *
  * b -> [string, number, boolean]
  */
-export const asTuple = <T extends any[]>(...tuple: T) => tuple;
+const asTuple = <T extends any[]>(...tuple: T) => tuple;
+
+export default asTuple;

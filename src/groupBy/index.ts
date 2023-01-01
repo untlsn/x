@@ -1,3 +1,5 @@
+import type { ArrayCallback } from 'x/types';
+
 /**
  * Group array object by values return from callback
  * @param array
@@ -10,7 +12,7 @@
  *
  * evenObj -> { "true": [2, 4, 6], "false": [1, 3, 5] }
  */
-export const groupBy = <T, R extends string | number>(array: T[], callback: ArrayCallback<T, R>) => {
+const groupBy = <T, R extends string | number>(array: T[], callback: ArrayCallback<T, R>) => {
   const obj = {} as Record<R, T[]>;
 
   array.forEach((val, i, arr) => {
@@ -24,3 +26,5 @@ export const groupBy = <T, R extends string | number>(array: T[], callback: Arra
 
   return obj;
 };
+
+export default groupBy;

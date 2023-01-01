@@ -8,4 +8,6 @@
  *
  * set -> Set(1, 2, 3, 4, 5)
  */
-export const toSet = <T>(array: T[]) => new Set(array);
+const toSet = <T>(array: T[]) => new Set(array);
+
+export default toSet;

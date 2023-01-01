@@ -14,10 +14,12 @@
  *
  * arr == arr2 && arr == arr3 -> true
  */
-export const mutAddOnes = <T>(array: T[], element: T) => {
+const mutAddOnes = <T>(array: T[], element: T) => {
   if (!array.includes(element)) {
     array.push(element);
   }
 
   return array;
 };
+
+export default mutAddOnes;

@@ -10,7 +10,7 @@
  * arr2 -> [1, 2, 4, 5]
  * arr == arr2 -> true
  */
-export const mutRemove = <T>(array: T[], element: T) => {
+const mutRemove = <T>(array: T[], element: T) => {
   const index = array.indexOf(element);
 
   if (index > -1) {
@@ -19,3 +19,5 @@ export const mutRemove = <T>(array: T[], element: T) => {
 
   return array;
 };
+
+export default mutRemove;

@@ -6,8 +6,10 @@
  *
  * last(arr) -> 5
  */
-export function last<T extends string>(str: T): string
-export function last<T>(arr: T[]): T
-export function last<T>(arr: T[]) {
+function last<T extends string>(str: T): string
+function last<T>(arr: T[]): T
+function last<T>(arr: T[]) {
   return arr[arr.length - 1];
 }
+
+export default last;

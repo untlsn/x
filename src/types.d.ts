@@ -6,6 +6,7 @@ export type DictVal<T> = T[keyof T]
 export type DictPair<T> = [key: DictKey<T>, val: DictVal<T>]
 export type ObjectCallback<Obj extends Dict, Return> = (val: DictVal<Obj>, key: DictKey<Obj>, obj: Obj) => Return
 export type AnyDictKey = string | number | symbol
+export type ArrayCallback<T, R> = (value: T, index: number, array: T[]) => R
 
 export { Identity } from './identity/types';
 export { Noop } from './noop/types';

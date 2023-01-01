@@ -1,6 +1,3 @@
-import { identity } from 'x/flow';
-import { timesMap } from 'x/times/index';
-
 /**
  * Create array of number from 0 to length
  * @example
@@ -8,5 +5,5 @@ import { timesMap } from 'x/times/index';
  * arr -> [0, 1, 2, 3, 4]
  */
 export const times = (length: number) => (
-  timesMap(length, identity)
+  x.timesMap(length, x.identity)
 );
