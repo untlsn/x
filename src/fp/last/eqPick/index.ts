@@ -1,5 +1,3 @@
-// Higher Order Functions of `matches` functions where last argument will be predefined
-
 import _eqPick from 'x/eqPick';
 
 /**
@@ -13,6 +11,8 @@ import _eqPick from 'x/eqPick';
  * eqPick('b', obj1, obj2) -> true
  * eqPick('c', obj1, obj2) -> false
  */
-export const eqPick = <TObj extends object>(prop: keyof TObj) => (
+const eqPick = <TObj extends object>(prop: keyof TObj) => (
   (obj1: TObj, obj2: TObj) => _eqPick(obj1, obj2, prop)
 );
+
+export default eqPick;
