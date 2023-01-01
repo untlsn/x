@@ -1,6 +1,6 @@
-import type { Booleanish, Dict, ObjectCallback } from './types';
-import type { DictPair } from './types';
-import { strictEntries } from './objectManipulation';
+import type { Booleanish, Dict, ObjectCallback } from 'x/types';
+import type { DictPair } from 'x/types';
+import strictEntries from 'x/strictEntries';
 
 /**
  * Iterate over object any return first pair when callback return true
@@ -13,6 +13,8 @@ import { strictEntries } from './objectManipulation';
  * // if callback is not defined function will use (v) => v
  * objSome(fill) -> ['c', 2]
  */
-export const objFind = <Obj extends Dict>(obj: Obj, callback: ObjectCallback<Obj, Booleanish> = Boolean): DictPair<Obj> => (
+const objFind = <Obj extends Dict>(obj: Obj, callback: ObjectCallback<Obj, Booleanish> = Boolean): DictPair<Obj> => (
   strictEntries(obj).find(([key, val]) => callback(val, key, obj)) as any
 );
+
+export default objFind;

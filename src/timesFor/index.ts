@@ -11,6 +11,8 @@
  *
  * arr -> [0, 1, 2, 3, 4, 5]
  */
-export const timesFor = (length: number, callback: (index: number) => void) => {
+const timesFor = (length: number, callback: (index: number) => void) => {
   for (let i = 0; i < length; i++) callback(i);
 };
+
+export default timesFor;

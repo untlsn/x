@@ -1,6 +1,6 @@
 // Higher Order Functions of `matches` functions where last argument will be predefined
 
-import { eqPick as _eqPick } from '../../matches';
+import _eqPick from 'x/eqPick';
 
 /**
  * Check if prop for obj1 and obj2 are the same

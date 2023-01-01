@@ -1,5 +1,5 @@
 import type { Booleanish, Dict, ObjectCallback } from 'x/types';
-import { strictEntries } from 'x/objectManipulation';
+import strictEntries from 'x/strictEntries';
 
 /**
  * Iterate over object any return true if any of callback return truly value
