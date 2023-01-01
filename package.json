@@ -1,6 +1,9 @@
 {
 	"name": "@untlsn/x",
 	"version": "0.0.0",
+	"scripts": {
+		"build": "tsup "
+	},
 	"devDependencies": {
 		"tsup": "^6.5.0",
 		"typescript": "^4.9.4",
