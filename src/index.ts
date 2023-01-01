@@ -1,1 +1,1 @@
-export * as x from './_bundler';
+export * as x from './all';

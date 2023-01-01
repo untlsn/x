@@ -8,4 +8,6 @@ export * from './types.d';
 export * from './creators';
 export * from './objSome';
 export * from './objFind';
+export { default as get } from './get';
+
 export * as fp from './fp';
