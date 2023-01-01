@@ -11,4 +11,6 @@ import type { Booleanish } from 'x/types';
  * negate('') -> true
  * negate(0) -> true
  */
-export const negate = (value: Booleanish) => !value;
+const negate = (value: Booleanish) => !value;
+
+export default negate;

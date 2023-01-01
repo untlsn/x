@@ -7,4 +7,6 @@
  *
  * getObj() == obj -> true
  */
-export const constant = <T>(value: T) => () => value;
+const constant = <T>(value: T) => () => value;
+
+export default constant;

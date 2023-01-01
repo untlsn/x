@@ -1,4 +1,4 @@
-import type { Booleanish, Dict } from 'src/types';
+import type { Booleanish, Dict } from 'x/types';
 
 /**
  * Iterate over object any return true if any of callback return truly value
@@ -11,6 +11,8 @@ import type { Booleanish, Dict } from 'src/types';
  * objSome(empty, (v) => v == 'c') -> false
  * objSome(fill, (v) => v == 'c') -> true
  */
-export const objSomeKeys = <Obj extends Dict>(obj: Obj, callback: (key: keyof Obj) => Booleanish) => (
+const objSomeKeys = <Obj extends Dict>(obj: Obj, callback: (key: keyof Obj) => Booleanish) => (
   Object.values(obj).some(callback)
 );
+
+export default objSomeKeys;

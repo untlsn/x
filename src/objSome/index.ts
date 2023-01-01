@@ -1,5 +1,22 @@
-// Iterate over object and return true when any entry will return true
+import type { Booleanish, Dict, ObjectCallback } from 'x/types';
+import { strictEntries } from 'x/objectManipulation';
 
-export { objSome } from './objSome';
-export { objSomeKeys } from './keys';
-export { objSomeValues } from './values';
+/**
+ * Iterate over object any return true if any of callback return truly value
+ * If you only want a values and keys of object, otherwise use objSomeValue of objSomeKeys
+ *
+ * @example
+ * const empty = { a: 0, b: 0 };
+ * const fill = { a: 0, b: 0, c: 2 };
+ *
+ * objSome(empty, (v) => v) -> false
+ * // if callback is not defined function will use (v) => v
+ * objSome(fill) -> true
+ */
+const objSome = <Obj extends Dict>(obj: Obj, callback: ObjectCallback<Obj, Booleanish> = Boolean) => (
+  strictEntries(
+    obj,
+  ).some(([key, val]) => callback(val, key, obj))
+);
+
+export default objSome;
