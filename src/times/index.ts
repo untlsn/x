@@ -6,7 +6,7 @@ import timesMap from 'x/timesMap';
  * const arr = times(5);
  * arr -> [0, 1, 2, 3, 4]
  */
-const times = (length: number) => (
+const times = (length: number): number[] => (
   timesMap(length, x.identity)
 );
 
