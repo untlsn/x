@@ -1,3 +1,6 @@
+export { i as fp } from './index-2fadbb2d.js';
+import './index-51d7ef87.js';
+
 /**
  * Work like Array.at, but have better browser support
  * @example
@@ -58,25 +61,9 @@ declare const createMapChain: {
  * eqPick('b', obj1, obj2) -> true
  * eqPick('c', obj1, obj2) -> false
  */
-declare const eqPick$1: <TObj extends object>(obj1: TObj, obj2: TObj, prop: keyof TObj) => boolean;
+declare const eqPick: <TObj extends object>(obj1: TObj, obj2: TObj, prop: keyof TObj) => boolean;
 
 declare const execFn: <Cb extends (...args: any[]) => any>(cb: Cb) => ReturnType<Cb>;
-
-type Get = {
-    [K in string]: <T extends Record<K, any>>(obj: any) => T[K];
-};
-/**
- * shallow proxy that return function for prop pick
- *
- * @example
- *
- * const obj = { a: 1, b: 2, c: 3 };
- *
- * x.get.a(obj) -> 1
- * x.get.b(obj) -> 2
- * x.get.c(obj) -> 3
- */
-declare const get: Get;
 
 type Identity = <T>(value: T) => T;
 
@@ -420,30 +407,4 @@ declare const toSet: <T>(array: T[]) => Set<T>;
  */
 declare const zip3: <T1, T2, T3>(arr1: T1[], arr2: T2[], arr3: T3[]) => [T1, T2 | undefined, T3 | undefined][];
 
-/**
- * Check if prop for obj1 and obj2 are the same
- *
- * @example
- *
- * const obj1 = { a: 1, b: 2, c: 3 };
- * const obj2 = { a: 5, b: 2, c: 1 };
- *
- * eqPick('b', obj1, obj2) -> true
- * eqPick('c', obj1, obj2) -> false
- */
-declare const eqPick: <TObj extends object>(prop: keyof TObj) => (obj1: TObj, obj2: TObj) => boolean;
-
-declare const index$1_eqPick: typeof eqPick;
-declare namespace index$1 {
-  export {
-    index$1_eqPick as eqPick,
-  };
-}
-
-declare namespace index {
-  export {
-    index$1 as last,
-  };
-}
-
-export { arrayAt, asTuple, constant, createMapChain, eqPick$1 as eqPick, execFn, index as fp, get, groupBy, identity, invert, last, mapConstValues, mapKeys, mapValues, mutAddOnes, mutRemove, mutToggleInSet, negate, noop, objFind, objSome, objSomeKeys, objSomeValues, omit, pick, pickBy, pickKeysBy, shallowObjMatch, strictEntries, strictKeys, times, timesConst, timesFor, timesMap, toSet, zip3 };
+export { arrayAt, asTuple, constant, createMapChain, eqPick, execFn, groupBy, identity, invert, last, mapConstValues, mapKeys, mapValues, mutAddOnes, mutRemove, mutToggleInSet, negate, noop, objFind, objSome, objSomeKeys, objSomeValues, omit, pick, pickBy, pickKeysBy, shallowObjMatch, strictEntries, strictKeys, times, timesConst, timesFor, timesMap, toSet, zip3 };

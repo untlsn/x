@@ -4,7 +4,6 @@ export { default as constant } from './constant';
 export { default as createMapChain } from './createMapChain';
 export { default as eqPick } from './eqPick';
 export { default as execFn } from './execFn';
-export { default as get } from './get';
 export { default as groupBy } from './groupBy';
 export { default as identity } from './identity';
 export { default as invert } from './invert';
