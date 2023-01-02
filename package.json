@@ -1,8 +1,14 @@
 {
 	"name": "@untlsn/x",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"scripts": {
-		"build": "tsup "
+		"build": "tsup"
+	},
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
 	},
 	"devDependencies": {
 		"tsup": "^6.5.0",
