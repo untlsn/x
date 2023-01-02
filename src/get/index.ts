@@ -1,5 +1,5 @@
 type Get = {
-  [K in string]: <T extends Record<K, any>>(obj) => T[K]
+  [K in string]: <T extends Record<K, any>>(obj: T) => T[K]
 }
 
 /**
