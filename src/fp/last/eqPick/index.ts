@@ -1,4 +1,4 @@
-import _eqPick from 'x/eqPick';
+import _eqPick from 'src/eqPick';
 
 /**
  * Check if prop for obj1 and obj2 are the same

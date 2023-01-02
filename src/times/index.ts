@@ -1,4 +1,5 @@
-import timesMap from 'x/timesMap';
+import timesMap from 'src/timesMap';
+import identity from 'src/identity';
 
 /**
  * Create array of number from 0 to length
@@ -7,7 +8,7 @@ import timesMap from 'x/timesMap';
  * arr -> [0, 1, 2, 3, 4]
  */
 const times = (length: number): number[] => (
-  timesMap(length, x.identity)
+  timesMap(length, identity)
 );
 
 export default times;

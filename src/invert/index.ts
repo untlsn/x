@@ -1,5 +1,5 @@
-import type { AnyDictKey } from 'x/types';
-import strictEntries from 'x/strictEntries';
+import type { AnyDictKey } from 'src/types';
+import strictEntries from 'src/strictEntries';
 
 /**
  * Invert values and keys of object

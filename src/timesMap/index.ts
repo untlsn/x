@@ -1,4 +1,4 @@
-import timesConst from 'x/timesConst';
+import timesConst from 'src/timesConst';
 
 /**
  * Create array mapped by callback

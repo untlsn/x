@@ -1,6 +1,6 @@
-import type { Booleanish, Dict, ObjectCallback } from 'x/types';
-import identity from 'x/identity';
-import strictEntries from 'x/strictEntries';
+import type { Booleanish, Dict, ObjectCallback } from 'src/types';
+import identity from 'src/identity';
+import strictEntries from 'src/strictEntries';
 
 /**
  * filter object like array

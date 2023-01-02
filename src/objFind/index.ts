@@ -1,6 +1,6 @@
-import type { Booleanish, Dict, ObjectCallback } from 'x/types';
-import type { DictPair } from 'x/types';
-import strictEntries from 'x/strictEntries';
+import type { Booleanish, Dict, ObjectCallback } from 'src/types';
+import type { DictPair } from 'src/types';
+import strictEntries from 'src/strictEntries';
 
 /**
  * Iterate over object any return first pair when callback return true

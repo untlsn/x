@@ -1,4 +1,4 @@
-import type { Identity } from 'x/identity/types';
+import type { Identity } from 'src/identity/types';
 
 /**
  * Return first param

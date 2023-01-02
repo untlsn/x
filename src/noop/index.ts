@@ -1,4 +1,4 @@
-import type { Noop } from 'x/noop/types';
+import type { Noop } from 'src/noop/types';
 
 /**
  * This function does nothing, useful for placeholders

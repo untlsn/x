@@ -1,4 +1,4 @@
-import type { Dict, DictPair } from 'x/types';
+import type { Dict, DictPair } from 'src/types';
 
 /**
  * Native Object entries, but return keyof Obj instead of string

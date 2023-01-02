@@ -11,11 +11,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "x/*": ["./src/*"],
-      "x": ["./src"],
-    }
+    "baseUrl": "./",
   },
   "include": ["src"],
 }

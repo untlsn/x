@@ -1,4 +1,4 @@
-import type { Booleanish, Dict } from 'x/types';
+import type { Booleanish, Dict } from 'src/types';
 
 /**
  * Iterate over object any return true if any of callback return truly value

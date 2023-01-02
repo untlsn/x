@@ -1,4 +1,4 @@
-import type { ArrayCallback } from 'x/types';
+import type { ArrayCallback } from 'src/types';
 
 /**
  * Group array object by values return from callback

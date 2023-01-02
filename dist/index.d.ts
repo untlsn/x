@@ -350,7 +350,7 @@ declare const strictKeys: <Obj extends Dict<any>>(obj: Obj) => `${keyof Obj}`[];
  * const arr = times(5);
  * arr -> [0, 1, 2, 3, 4]
  */
-declare const times: (length: number) => unknown[];
+declare const times: (length: number) => number[];
 
 /**
  * Create array of same element
@@ -358,7 +358,7 @@ declare const times: (length: number) => unknown[];
  * const arr = times(5, true);
  * arr -> [true, true, true, true, true]
  */
-declare const timesConst: <T>(length: number, value: T) => any[];
+declare const timesConst: <T>(length: number, value: T) => T[];
 
 /**
  * Run callback many times

@@ -3,7 +3,7 @@
 	"author": "Filip Skoczeń",
 	"description": "Simple bundle of utility functions",
 	"license": "MIT",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"private": false,
 	"scripts": {
 		"build": "tsup"
@@ -14,8 +14,8 @@
 	},
 	"exports": {
 		".": {
-			"require": "./dist/index.js",
-			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js",
 			"types": "./dist/index.d.js"
 		}
 	},

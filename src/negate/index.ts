@@ -1,4 +1,4 @@
-import type { Booleanish } from 'x/types';
+import type { Booleanish } from 'src/types';
 
 /**
  * Return negate value

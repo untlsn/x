@@ -1,5 +1,5 @@
-import type { Dict, DictKey } from 'x/types';
-import strictKeys from 'x/strictKeys';
+import type { Dict, DictKey } from 'src/types';
+import strictKeys from 'src/strictKeys';
 
 /**
  * Map all values of object to same value

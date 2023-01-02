@@ -1,5 +1,5 @@
-import type { Dict, DictKey } from 'x/types';
-import pickBy from 'x/pickBy';
+import type { Dict, DictKey } from 'src/types';
+import pickBy from 'src/pickBy';
 
 /**
  * Filter object by picking keys

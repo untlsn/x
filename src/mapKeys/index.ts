@@ -1,5 +1,5 @@
-import type { AnyDictKey, Dict, DictVal, ObjectCallback } from 'x/types';
-import strictEntries from 'x/strictEntries';
+import type { AnyDictKey, Dict, DictVal, ObjectCallback } from 'src/types';
+import strictEntries from 'src/strictEntries';
 
 /**
  * Map values of object
