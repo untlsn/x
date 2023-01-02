@@ -1,6 +1,9 @@
 {
-	"name": "@untlsn/x",
+	"name": "@un-tlsn/x",
+	"author": "Filip Skoczeń",
+	"license": "MIT",
 	"version": "0.0.1",
+	"private": false,
 	"scripts": {
 		"build": "tsup"
 	},
