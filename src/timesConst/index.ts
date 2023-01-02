@@ -4,7 +4,7 @@
  * const arr = times(5, true);
  * arr -> [true, true, true, true, true]
  */
-const timesConst = <T>(length: number, value: T) => (
+const timesConst = <T>(length: number, value: T): T[] => (
   Array(length).fill(value)
 );
 
