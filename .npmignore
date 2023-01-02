@@ -1,2 +1,8 @@
 .idea
 node_modules
+src
+.eslintinore
+.eslintrc.yml
+tsconfig.json
+tsup.config.ts
+.vitest.config.ts
