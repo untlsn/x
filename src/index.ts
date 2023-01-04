@@ -34,5 +34,6 @@ export { default as timesMap } from './timesMap';
 export { default as toSet } from './toSet';
 export { default as zip3 } from './zip3';
 
-export * as string from './stringsShortcuts';
+export * from './stringsShortcuts';
+
 export * as fp from './fp';
