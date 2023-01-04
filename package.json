@@ -3,7 +3,7 @@
 	"author": "Filip Skoczeń",
 	"description": "Simple bundle of utility functions",
 	"license": "MIT",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"private": false,
 	"scripts": {
 		"build": "tsup"
@@ -12,6 +12,7 @@
 		"type": "git",
 		"url": "https://github.com/untlsn/x"
 	},
+	"main": "./dist/index.js",
 	"exports": {
 		".": {
 			"require": "./dist/index.cjs",
