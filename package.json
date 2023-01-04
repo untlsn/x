@@ -3,10 +3,11 @@
 	"author": "Filip Skoczeń",
 	"description": "Simple bundle of utility functions",
 	"license": "MIT",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"private": false,
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"bap": "tsup && pnpm publish"
 	},
 	"repository": {
 		"type": "git",
